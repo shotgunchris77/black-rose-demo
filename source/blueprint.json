@@ -1,0 +1,41 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "meta": {
+    "title": "Black Rose West Allis - Website Demo",
+    "author": "Black Rose West Allis"
+  },
+  "landingPage": "/",
+  "login": false,
+  "preferredVersions": {
+    "php": "8.2",
+    "wp": "latest"
+  },
+  "features": {
+    "networking": true
+  },
+  "steps": [
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "Black Rose",
+        "blogdescription": "Cocktail Bar & Food · West Allis",
+        "permalink_structure": "/%postname%/",
+        "timezone_string": "America/Chicago"
+      }
+    },
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "bundled",
+        "path": "/theme.zip"
+      },
+      "options": {
+        "activate": true
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php\nrequire '/wordpress/wp-load.php';\n$reg = WP_Block_Patterns_Registry::get_instance();\n$ids = array();\nforeach ( array( 'home' => 'Home', 'menu' => 'Menu', 'events' => 'Events', 'visit' => 'Visit' ) as $slug => $title ) {\n\t$p = $reg->get_registered( 'black-rose/' . $slug );\n\t$content = $p ? $p['content'] : '';\n\t$existing = get_page_by_path( $slug );\n\tif ( $existing ) {\n\t\t$ids[ $slug ] = wp_update_post( array( 'ID' => $existing->ID, 'post_content' => $content, 'post_title' => $title ) );\n\t} else {\n\t\t$ids[ $slug ] = wp_insert_post( array( 'post_type' => 'page', 'post_status' => 'publish', 'post_name' => $slug, 'post_title' => $title, 'post_content' => $content ) );\n\t}\n}\nupdate_option( 'show_on_front', 'page' );\nupdate_option( 'page_on_front', $ids['home'] );\nforeach ( get_posts( array( 'post_type' => array( 'post', 'page' ), 'name' => 'hello-world', 'post_status' => 'any' ) ) as $p ) { wp_delete_post( $p->ID, true ); }\n$sp = get_page_by_path( 'sample-page' ); if ( $sp ) { wp_delete_post( $sp->ID, true ); }\n$events = array(\n\tarray( 'Example — Negroni Night', '2026-11-20', '19:00', '23:00', 'Cocktails', 'A sample event: three takes on the Negroni and a few snacks to go with them.' ),\n\tarray( 'Example — Sunday Sauce Supper', '2026-11-29', '15:00', '20:00', 'Food', 'A sample event: family-style red sauce, meatballs and bread for the table.' ),\n\tarray( 'Example — Vinyl & Vermouth', '2026-12-04', '20:00', '23:59', 'Music', 'A sample event: records spinning upstairs and vermouth on the back bar.' ),\n\tarray( 'Example — Holiday Pop-Up Market', '2026-12-12', '15:00', '19:00', 'Pop-Up', 'A sample event: local makers, hot drinks and holiday gifts.' ),\n\tarray( 'Example — New Year\\'s Eve at Black Rose', '2026-12-31', '20:00', '01:00', 'Party', 'A sample event: a midnight toast, late-night bites and a dress code of \"something black\".' ),\n);\nforeach ( $events as $e ) {\n\t$id = wp_insert_post( array( 'post_type' => 'br_event', 'post_status' => 'publish', 'post_title' => $e[0], 'post_excerpt' => $e[5], 'post_content' => '<!-- wp:paragraph --><p>' . esc_html( $e[5] ) . ' Replace this with the real event details in Dashboard &gt; Events.</p><!-- /wp:paragraph -->' ) );\n\tupdate_post_meta( $id, 'br_date', $e[1] );\n\tupdate_post_meta( $id, 'br_start', $e[2] );\n\tupdate_post_meta( $id, 'br_end', $e[3] );\n\tupdate_post_meta( $id, 'br_tag', $e[4] );\n}\nflush_rewrite_rules();\n"
+    }
+  ]
+}
