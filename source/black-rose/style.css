@@ -37,6 +37,8 @@ img { display: block; }
 /* ---------- Header ---------- */
 .br-site-header { position: sticky; top: 0; z-index: 50; }
 .admin-bar .br-site-header { top: 32px; }
+@media (max-width: 782px) { .admin-bar .br-site-header { top: 46px; } }
+@media (max-width: 600px) { .admin-bar .br-site-header { top: 0; } }
 .br-header { border-bottom: 1px solid rgba(243,236,224,0.12); background: rgba(13,11,11,0.92) !important; backdrop-filter: blur(8px); }
 .br-header-logo img { width: 52px !important; height: auto; }
 .br-wordmark { margin: 0; font-family: var(--br-display); text-transform: uppercase; font-size: 1.6rem; line-height: 0.9; letter-spacing: 0.02em; }
@@ -263,6 +265,9 @@ h1 em, h2 em, h3 em, .br-hero-title em, .br-stack-title em, .br-ig-title em {
 /* ---------- Mobile header menu: dropdown panel under the header ---------- */
 .br-header .wp-block-navigation__responsive-container-open svg,
 .br-header .wp-block-navigation__responsive-container-close svg { width: 30px; height: 30px; }
+.br-header .wp-block-navigation__responsive-container-open,
+.br-header .wp-block-navigation__responsive-container-close { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; padding: 0 !important; border: 1px solid rgba(243,236,224,0.35); border-radius: 0; -webkit-tap-highlight-color: transparent; }
+.br-header .wp-block-navigation__responsive-container-open:active { background: rgba(196,30,58,0.2); }
 @media (max-width: 599px) {
 	.br-header .wp-block-navigation__responsive-container.is-menu-open {
 		position: fixed; top: 100%; left: 0; right: 0; bottom: auto; height: auto; max-height: calc(100vh - 4.5rem);
@@ -287,10 +292,12 @@ h1 em, h2 em, h3 em, .br-hero-title em, .br-stack-title em, .br-ig-title em {
 	.br-header .wp-block-navigation__responsive-container.is-menu-open a[aria-current="page"] { color: var(--br-rose); box-shadow: inset 4px 0 0 var(--br-rose); background: rgba(196,30,58,0.1); }
 	.br-header .wp-block-navigation__responsive-container.is-menu-open .br-nav-ig .wp-block-navigation-item__content { color: var(--br-rose); border: 0; }
 	.br-header .wp-block-navigation__responsive-container-close {
-		position: fixed !important; top: 1.15rem; right: var(--wp--preset--spacing--30); color: var(--br-cream);
+		position: fixed !important; top: 0.75rem; right: var(--wp--preset--spacing--30); color: var(--br-cream);
 		background: var(--br-ink); padding: 0.3rem; z-index: 2;
 	}
 	.has-modal-open .br-header .wp-block-navigation__responsive-container-open { visibility: hidden; }
+	html.has-modal-open { overflow: visible !important; }
+	html.has-modal-open body { overflow: visible !important; }
 }
 @keyframes brDrop { from { opacity: 0; clip-path: inset(0 0 100% 0); } to { opacity: 1; clip-path: inset(0 0 0 0); } }
 
