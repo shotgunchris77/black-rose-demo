@@ -150,7 +150,7 @@ $i = function ( $f ) { return esc_url( get_theme_file_uri( 'assets/images/' . $f
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"align":"center","className":"br-eyebrow br-eyebrow--dark"} -->
-<p class="has-text-align-center br-eyebrow br-eyebrow--dark">— The management, opening day</p>
+<p class="has-text-align-center br-eyebrow br-eyebrow--dark">— The management</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
