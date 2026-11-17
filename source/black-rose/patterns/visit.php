@@ -8,8 +8,8 @@
  */
 $i = function ( $f ) { return esc_url( get_theme_file_uri( 'assets/images/' . $f ) ); };
 ?>
-<!-- wp:cover {"url":"<?php echo $i( 'opening-day.jpg' ); ?>","dimRatio":75,"overlayColor":"ink","isUserOverlayColor":true,"minHeight":50,"minHeightUnit":"vh","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|50","left":"var:preset|spacing|30","right":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"1100px"}} -->
-<div class="wp-block-cover alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--30);min-height:50vh"><img class="wp-block-cover__image-background" alt="" src="<?php echo $i( 'opening-day.jpg' ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-ink-background-color has-background-dim-80 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","className":"br-eyebrow"} -->
+<!-- wp:cover {"url":"<?php echo $i( 'bar-room.jpg' ); ?>","dimRatio":75,"overlayColor":"ink","isUserOverlayColor":true,"minHeight":50,"minHeightUnit":"vh","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|50","left":"var:preset|spacing|30","right":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"1100px"}} -->
+<div class="wp-block-cover alignfull" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--30);min-height:50vh"><img class="wp-block-cover__image-background" alt="" src="<?php echo $i( 'bar-room.jpg' ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-ink-background-color has-background-dim-80 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","className":"br-eyebrow"} -->
 <p class="has-text-align-center br-eyebrow">Makers Row · West Allis</p>
 <!-- /wp:paragraph -->
 
@@ -54,7 +54,7 @@ $i = function ( $f ) { return esc_url( get_theme_file_uri( 'assets/images/' . $f
 
 <!-- wp:column {"width":"60%"} -->
 <div class="wp-block-column" style="flex-basis:60%"><!-- wp:html -->
-<div class="br-map br-map--tall"><iframe title="Map to Black Rose, 6601 W. National Ave., West Allis" src="https://www.openstreetmap.org/export/embed.html?bbox=-88.0005%2C43.0115%2C-87.9885%2C43.0178&amp;layer=mapnik&amp;marker=43.01463%2C-87.99449" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<a class="br-map br-map--tall" href="https://www.google.com/maps/search/?api=1&amp;query=6601+W+National+Ave+West+Allis+WI+53214" target="_blank" rel="noreferrer noopener" aria-label="Open Black Rose in Google Maps"><img src="<?php echo $i( 'map-black-rose.jpg' ); ?>" alt="Map showing Black Rose at 6601 W. National Ave., West Allis, near South 66th Street" loading="lazy"/><span class="br-map-pin">Black Rose<small>6601 W. National Ave.</small></span><span class="br-map-credit">&copy; OpenStreetMap contributors</span></a>
 <!-- /wp:html --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>

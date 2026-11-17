@@ -82,7 +82,7 @@ $i = function ( $f ) { return esc_url( get_theme_file_uri( 'assets/images/' . $f
 <!-- /wp:image -->
 
 <!-- wp:image {"sizeSlug":"large","className":"br-collage-b"} -->
-<figure class="wp-block-image size-large br-collage-b"><img src="<?php echo $i( 'meatballs.jpg' ); ?>" alt="Meatballs fresh out of the oven"/></figure>
+<figure class="wp-block-image size-large br-collage-b"><img src="<?php echo $i( 'meatballs.jpg' ); ?>" alt="Spaghetti and a meatball in red sauce"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -214,7 +214,7 @@ $i = function ( $f ) { return esc_url( get_theme_file_uri( 'assets/images/' . $f
 
 <!-- wp:column {"width":"60%"} -->
 <div class="wp-block-column" style="flex-basis:60%"><!-- wp:html -->
-<div class="br-map"><iframe title="Map to Black Rose, 6601 W. National Ave., West Allis" src="https://www.openstreetmap.org/export/embed.html?bbox=-88.0005%2C43.0115%2C-87.9885%2C43.0178&amp;layer=mapnik&amp;marker=43.01463%2C-87.99449" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<a class="br-map" href="https://www.google.com/maps/search/?api=1&amp;query=6601+W+National+Ave+West+Allis+WI+53214" target="_blank" rel="noreferrer noopener" aria-label="Open Black Rose in Google Maps"><img src="<?php echo $i( 'map-black-rose.jpg' ); ?>" alt="Map showing Black Rose at 6601 W. National Ave., West Allis, near South 66th Street" loading="lazy"/><span class="br-map-pin">Black Rose<small>6601 W. National Ave.</small></span><span class="br-map-credit">&copy; OpenStreetMap contributors</span></a>
 <!-- /wp:html --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
