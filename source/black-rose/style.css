@@ -142,6 +142,7 @@ h1 em, h2 em, h3 em, .br-hero-title em, .br-stack-title em, .br-ig-title em {
 .br-menu-jump { position: sticky; top: 4.6rem; z-index: 40; gap: 0.4rem 2.2rem !important; border-bottom: 1px solid rgba(243,236,224,0.12); }
 .admin-bar .br-menu-jump { top: calc(4.6rem + 32px); }
 .br-menu-jump p { margin: 0; }
+.br-menu-pick { display: none; }
 .br-menu-jump a { font-family: var(--br-display); text-transform: uppercase; letter-spacing: 0.14em; text-decoration: none; font-size: 1.05rem; padding: 0.2rem 0; border-bottom: 2px solid transparent; }
 .br-menu-jump a:hover, .br-menu-jump a.is-active { color: var(--br-rose); border-bottom-color: var(--br-rose); }
 .br-menu-section { border-top: 1px solid rgba(243,236,224,0.18); scroll-margin-top: 9rem; padding: 0; }
@@ -225,14 +226,21 @@ h1 em, h2 em, h3 em, .br-hero-title em, .br-stack-title em, .br-ig-title em {
 	.br-tapes > .br-tape--alt { top: 3.3rem; }
 	.br-collage { min-height: 24rem; margin-top: 2rem; }
 	.br-tile { min-height: 60vh !important; border-right: 0; border-bottom: 1px solid var(--br-ink); }
-	.br-menu-hero { min-height: 34vh !important; }
-	.br-menu-jump { top: 4rem; display: grid !important; grid-template-columns: repeat(4, 1fr); gap: 0 !important; padding: 0 !important; }
-	.br-menu-jump p { display: flex; }
-	.br-menu-jump a { flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; min-height: 3.2rem; padding: 0.4rem 0.2rem; font-size: 0.85rem; letter-spacing: 0.06em; border-bottom-width: 3px; -webkit-tap-highlight-color: transparent; }
-	.br-menu-jump a.is-active { background: rgba(196,30,58,0.12); }
-	.br-menu-section { scroll-margin-top: 8rem; }
-	.br-menu-section > summary { font-size: 2.3rem; padding: 1.1rem 0; -webkit-tap-highlight-color: transparent; }
-	.br-menu-section > .wp-block-columns { padding-bottom: 1.6rem; }
+	.br-menu-hero { min-height: 0 !important; padding-top: 2.2rem !important; padding-bottom: 1.8rem !important; }
+	.br-menu-hero .br-hero-title + p { display: none; }
+	.br-menu-jump { top: 4rem; display: block !important; padding: 0.6rem var(--wp--preset--spacing--30) !important; }
+	.br-menu-pick { display: flex; width: 100%; align-items: center; justify-content: space-between; min-height: 3.2rem; padding: 0 1rem; background: var(--br-ink); color: var(--br-cream); border: 1px solid var(--br-rose); font-family: var(--br-display); text-transform: uppercase; letter-spacing: 0.1em; font-size: 1.15rem; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+	.br-menu-pick-caret { width: 0.7rem; height: 0.7rem; border-right: 2px solid var(--br-rose); border-bottom: 2px solid var(--br-rose); transform: translateY(-25%) rotate(45deg); transition: transform 0.2s; }
+	.br-menu-jump.is-open .br-menu-pick-caret { transform: translateY(25%) rotate(-135deg); }
+	.br-menu-jump p { display: none; margin: 0; }
+	.br-menu-jump.is-open p { display: block; }
+	.br-menu-jump.is-open p a { display: flex; align-items: center; min-height: 3.2rem; padding: 0 1rem; border: 1px solid rgba(243,236,224,0.12); border-top: 0; background: var(--br-coal); font-size: 1.05rem; letter-spacing: 0.1em; -webkit-tap-highlight-color: transparent; }
+	.br-menu-jump.is-open p a.is-active { color: var(--br-rose); background: rgba(196,30,58,0.12); }
+	.br-menu-section, .br-menu-section:last-of-type { border: 0; scroll-margin-top: 8rem; }
+	.br-menu-section:not([open]) { display: none; }
+	.br-menu-section > summary { display: none; }
+	.br-menu-section > .wp-block-columns { padding: 0.4rem 0 1.6rem; }
+	.br-menu { padding-top: 1.2rem !important; }
 	.br-menu-img img { aspect-ratio: 21/9; }
 	.br-cal-day { min-height: 4.2rem; padding: 0.3rem; }
 	.br-cal-dow { padding: 0.4rem 0.2rem; font-size: 0.65rem; letter-spacing: 0.04em; text-align: center; }
