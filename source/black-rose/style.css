@@ -120,8 +120,7 @@ h1 em, h2 em, h3 em, .br-hero-title em, .br-stack-title em, .br-ig-title em {
 /* ---------- Map + hours ---------- */
 .br-map { position: relative; display: block; width: 100%; aspect-ratio: 4/3; overflow: hidden; border: 1px solid rgba(243,236,224,0.2); background: var(--br-coal); text-decoration: none; }
 .br-map--tall { aspect-ratio: 1/1; min-height: 26rem; }
-.br-map img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; transition: filter 0.3s; }
-.br-map:hover img { filter: brightness(1.15); }
+.br-map img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
 .br-map-pin { position: absolute; left: 50%; top: 50%; transform: translate(-50%, calc(-100% - 3.4rem)); background: var(--br-rose); color: var(--br-cream); font-family: var(--br-display); text-transform: uppercase; letter-spacing: 0.08em; font-size: 1.1rem; line-height: 1.1; padding: 0.45rem 0.8rem; white-space: nowrap; text-align: center; box-shadow: 0 8px 20px rgba(0,0,0,0.5); }
 .br-map-pin small { display: block; font-family: var(--br-serif); font-style: italic; text-transform: none; letter-spacing: 0; font-size: 0.85rem; }
 .br-map-credit { position: absolute; right: 0.4rem; bottom: 0.3rem; font-size: 0.65rem; color: var(--br-ash); background: rgba(13,11,11,0.7); padding: 0.1rem 0.35rem; }
