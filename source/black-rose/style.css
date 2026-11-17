@@ -87,8 +87,9 @@ h1 em, h2 em, h3 em, .br-hero-title em, .br-stack-title em, .br-ig-title em {
 .br-tape p { display: inline-block; margin: 0; font-family: var(--br-display); text-transform: uppercase; font-size: clamp(1.1rem, 2.4vw, 1.7rem); letter-spacing: 0.06em; line-height: 1; white-space: nowrap; color: var(--br-ink); }
 .br-tape p.is-looping { animation: br-marquee 60s linear infinite; }
 .br-tape--alt p.is-looping { animation-direction: reverse; animation-duration: 70s; }
-.br-dot { display: inline-block; margin: 0 0.6em; color: var(--br-cream); }
-.br-tape--alt .br-dot { color: var(--br-rose); }
+.br-dot { display: inline-block; width: 1.45em; height: 1.6em; margin: 0 0.5em; vertical-align: -0.38em; overflow: hidden; color: transparent; font-size: inherit; line-height: 1;
+	background-color: var(--br-ink); -webkit-mask: url(assets/images/rose-mark.png) center / contain no-repeat; mask: url(assets/images/rose-mark.png) center / contain no-repeat; }
+.br-tape--alt .br-dot { background-color: var(--br-ink); }
 @keyframes br-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 .br-tape-flat .br-tape { box-shadow: none; }
 
