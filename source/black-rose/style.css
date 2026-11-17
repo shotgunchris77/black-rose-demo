@@ -223,9 +223,9 @@ h1 em, h2 em, h3 em, .br-hero-title em, .br-stack-title em, .br-ig-title em {
 @media (max-width: 781px) {
 	.br-wordmark { font-size: 1.3rem; }
 	.br-header-logo img { width: 42px !important; }
-	.br-tapes { height: 7.5rem; }
-	.br-tapes .br-tape-wrap { top: 2rem; }
-	.br-tapes > .br-tape--alt { top: 3.3rem; }
+	.br-tapes { height: 9.6rem; }
+	.br-tapes .br-tape-wrap { top: 1.6rem; transform: rotate(-2.5deg); }
+	.br-tapes > .br-tape--alt { top: 5.4rem; transform: rotate(2deg); }
 	.br-collage { min-height: 24rem; margin-top: 2rem; }
 	.br-tile { min-height: 60vh !important; border-right: 0; border-bottom: 1px solid var(--br-ink); }
 	.br-menu-hero { min-height: 0 !important; padding-top: 2.2rem !important; padding-bottom: 1.8rem !important; }
