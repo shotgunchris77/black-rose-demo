@@ -2,7 +2,7 @@
 
 A live WordPress demo of a proposed website for Black Rose, the cocktail bar with elevated Italian street food at Makers Row, 6601 W. National Ave., West Allis.
 
-**Open the demo:** https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/shotgunchris77/black-rose-demo/main/Black%20Rose%20Demo%20Package.zip
+**Open the demo:** https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/shotgunchris77/black-rose-demo/main/black-rose-demo.zip
 
 The demo runs in WordPress Playground in your browser. Nothing is saved between visits, and it takes about 20-30 seconds to load.
 
