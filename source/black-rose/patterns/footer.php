@@ -39,7 +39,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Tuesday – Friday: from 4 pm<br>Saturday &amp; Sunday: from 3 pm<br>Monday: closed</p>
+<p>Tue – Fri: from 4 pm<br>Sat &amp; Sun: from 3 pm<br>Monday: closed</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column -->
 

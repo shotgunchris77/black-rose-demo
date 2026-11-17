@@ -54,7 +54,7 @@ $i = function ( $f ) { return esc_url( get_theme_file_uri( 'assets/images/' . $f
 
 <!-- wp:column {"width":"60%"} -->
 <div class="wp-block-column" style="flex-basis:60%"><!-- wp:html -->
-<div class="br-map br-map--tall"><iframe title="Map to Black Rose, 6601 W. National Ave., West Allis" src="https://www.google.com/maps?q=6601+W+National+Ave,+West+Allis,+WI+53214&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<div class="br-map br-map--tall"><iframe title="Map to Black Rose, 6601 W. National Ave., West Allis" src="https://www.openstreetmap.org/export/embed.html?bbox=-88.0005%2C43.0115%2C-87.9885%2C43.0178&amp;layer=mapnik&amp;marker=43.01463%2C-87.99449" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 <!-- /wp:html --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>

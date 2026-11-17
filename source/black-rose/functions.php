@@ -27,7 +27,7 @@ function black_rose_assets() {
 	// Tape banner: the words are typed once in the "Tape Banner" template part; repeat them so the loop is seamless.
 	$js = "document.querySelectorAll('.br-tape p').forEach(function(p){var t=p.innerHTML;p.innerHTML=t+' <span class=\"br-dot\">&#10047;</span> '+t+' <span class=\"br-dot\">&#10047;</span> '+t+' <span class=\"br-dot\">&#10047;</span> '+t+' <span class=\"br-dot\">&#10047;</span> ';p.classList.add('is-looping');});"
 		. "document.querySelectorAll('.br-menu-jump a').forEach(function(a){a.addEventListener('click',function(){var id=a.getAttribute('href').split('#')[1];var d=document.getElementById(id);if(d&&d.tagName==='DETAILS'){d.open=true;}});});"
-		. "if(location.hash){var d=document.getElementById(location.hash.slice(1));if(d&&d.tagName==='DETAILS'){d.open=true;}}";
+		. "function brOpen(){if(!location.hash){return;}var d=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(d&&d.tagName==='DETAILS'){d.open=true;setTimeout(function(){d.scrollIntoView({block:'start'});},30);}}brOpen();window.addEventListener('hashchange',brOpen);";
 	wp_register_script( 'black-rose-ui', false, array(), $ver, true );
 	wp_enqueue_script( 'black-rose-ui' );
 	wp_add_inline_script( 'black-rose-ui', $js );
