@@ -37,6 +37,10 @@ add_action( 'admin_init', function () {
 	foreach ( array( 'sample-page', 'hello-world' ) as $junk ) {
 		foreach ( get_posts( array( 'post_type' => array( 'post', 'page' ), 'name' => $junk, 'post_status' => 'any', 'numberposts' => -1 ) ) as $jp ) { wp_delete_post( $jp->ID, true ); }
 	}
+	if ( ! get_page_by_path( 'nye-party-tba', OBJECT, 'br_event' ) ) {
+		$ev = wp_insert_post( array( 'post_type' => 'br_event', 'post_status' => 'publish', 'post_name' => 'nye-party-tba', 'post_title' => 'NYE Party TBA', 'post_excerpt' => 'Details to be announced. Follow @blackrosewestallis on Instagram for updates.', 'post_content' => '<!-- wp:paragraph --><p>Details to be announced. Follow @blackrosewestallis on Instagram for updates.</p><!-- /wp:paragraph -->' ) );
+		if ( $ev ) { update_post_meta( $ev, 'br_date', '2026-12-31' ); }
+	}
 	flush_rewrite_rules();
 	delete_option( 'br_setup_pending' );
 	set_transient( 'br_setup_msg', 'done', 300 );

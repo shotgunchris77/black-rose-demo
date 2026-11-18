@@ -3,7 +3,7 @@
 What's in this kit:
 
 - `black-rose-theme.zip`: the website design, menu, photos and events calendar (a WordPress theme).
-- `black-rose-setup.zip`: a one-time helper plugin. It creates the Home, Menu, Events and Visit pages, sets the home page, turns on clean links (/menu/, /events/) and removes WordPress sample content.
+- `black-rose-setup.zip`: a one-time helper plugin. It creates the Home, Menu, Events and Visit pages, sets the home page, adds the NYE Party TBA event, turns on clean links (/menu/, /events/) and removes WordPress sample content.
 - This guide.
 
 ## 1. Buy the right GoDaddy products
