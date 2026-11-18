@@ -154,41 +154,6 @@ $i = function ( $f ) { return esc_url( get_theme_file_uri( 'assets/images/' . $f
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"br-chef","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|30","right":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"ink","layout":{"type":"constrained","contentSize":"1100px"}} -->
-<div class="wp-block-group alignfull br-chef has-ink-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--30)"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
-<div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"46%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:46%"><!-- wp:image {"sizeSlug":"large","className":"br-chef-img"} -->
-<figure class="wp-block-image size-large br-chef-img"><img src="<?php echo $i( 'br-chef-ace.jpg' ); ?>" alt="Ace, the Black Rose chef, smiling behind the bar"/></figure>
-<!-- /wp:image --></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"verticalAlignment":"center","width":"54%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:54%"><!-- wp:paragraph {"className":"br-eyebrow"} -->
-<p class="br-eyebrow">Meet the Chef</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:heading {"className":"br-stack-title"} -->
-<h2 class="wp-block-heading br-stack-title">Ace<br><em>runs the kitchen.</em></h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"fontSize":"large"} -->
-<p class="has-large-font-size">Everything coming out of the Black Rose kitchen has Ace's fingerprints on it. House meatballs, fresh local pasta, Sciortino's rolls, Le Marche sausage and plenty of mozzarella.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"textColor":"ash"} -->
-<p class="has-ash-color has-text-color">Elevated Italian street food, built for the middle of the table. If you see him at the bar, say hi.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( home_url( '/menu/#food' ) ); ?>">See the food menu</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns --></div>
-<!-- /wp:group -->
-
-
 <!-- wp:group {"align":"full","className":"br-gallery-band","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|30","right":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"coal","layout":{"type":"constrained","contentSize":"1200px"}} -->
 <div class="wp-block-group alignfull br-gallery-band has-coal-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--30)"><!-- wp:paragraph {"align":"center","className":"br-eyebrow"} -->
 <p class="has-text-align-center br-eyebrow">Dark walls · Loud art · Good food</p>
