@@ -280,3 +280,14 @@ function black_rose_event_details_shortcode() {
 	return $out . '</div>';
 }
 add_shortcode( 'br_event_details', 'black_rose_event_details_shortcode' );
+
+/**
+ * Keep theme image links working after a domain change (for example, GoDaddy's temporary
+ * address to the real domain). Rewrites any saved .../wp-content/themes/black-rose/ URL
+ * in page content to the current site address.
+ */
+add_filter( 'the_content', function ( $html ) {
+	if ( false === strpos( $html, '/wp-content/themes/black-rose/' ) ) { return $html; }
+	$base = trailingslashit( get_template_directory_uri() );
+	return preg_replace( '#https?://[^"\'\s()]+?/wp-content/themes/black-rose/#', $base, $html );
+}, 99 );

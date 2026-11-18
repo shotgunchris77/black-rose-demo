@@ -16,4 +16,4 @@ Block theme for Black Rose West Allis, a cocktail bar with elevated Italian stre
 
 == Credits ==
 Fonts: Anton, Instrument Serif, Inter (SIL Open Font License).
-Placeholder photos: Unsplash (Unsplash License). Logo and two images from @blackrosewestallis on Instagram.
+Photos: Black Rose venue and food photos, plus a few Unsplash images (Unsplash License) for drinks. Logo and two images from @blackrosewestallis on Instagram.
