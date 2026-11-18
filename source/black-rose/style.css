@@ -165,6 +165,11 @@ h1 em, h2 em, h3 em, .br-hero-title em, .br-stack-title em, .br-ig-title em {
 .br-item-name { font-size: 1.45rem !important; margin: 0 0 0.3rem; }
 .br-item-desc { margin: 0; color: var(--br-ash); font-size: 0.98rem; }
 .br-menu > .br-fine { margin-top: 2.4rem; }
+.br-menu-group { grid-column: 1 / -1; font-family: var(--br-serif) !important; font-style: italic; text-transform: none !important; color: var(--br-rose); font-size: clamp(1.7rem, 3.4vw, 2.3rem) !important; line-height: 1.1; margin: 1.2rem 0 -0.4rem !important; }
+.br-menu-section .wp-block-column:last-child > .br-menu-group:first-child, .br-menu-note + .br-menu-group { margin-top: 0 !important; }
+.br-menu-note { grid-column: 1 / -1; font-family: var(--br-display); text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.8rem; color: var(--br-ash); }
+.br-item-name { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+.br-price { font-family: var(--br-display); color: var(--br-rose); font-size: 1.15rem; white-space: nowrap; flex-shrink: 0; }
 
 /* ---------- Events: calendar ---------- */
 .br-cal { scroll-margin-top: 6rem; }
