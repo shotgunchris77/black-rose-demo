@@ -146,13 +146,6 @@ $sections = array(
 		'open'  => false,
 		'note'  => 'V can be made vegetarian · VG can be made vegan · GF gluten-free · GFO gluten-free option available',
 		'groups' => array(
-			array( 'h' => 'Specials', 'items' => array(
-				array( 'Mortadella Sliders', 'Seared mortadella, mozzarella, spiced fig jam', '14' ),
-				array( 'Parm Patata', 'Roasted fingerlings, scarpariello sauce, peppers, onions, shaved parm (V, VG, GF)', '11' ),
-				array( 'Fig & Prosciutto Pizza', 'EVOO, fig, prosciutto, arugula, ricotta, balsamic reduction, pistachio', '17' ),
-				array( 'Squash & Rosemary Pasta', 'House roasted squash sauce, roasted rosemary, rigatoni mezzi. Add sausage $5', '15' ),
-				array( 'Rotating Pesto Pasta', 'Ask your server for details', '15' ),
-			) ),
 			array( 'h' => 'To Snack, To Share', 'items' => array(
 				array( 'Wisconsin Platter', 'Local meats, cheese, pickled veggies, local jam (GFO)', '26' ),
 				array( 'Brat Sliders', "Rotating chef's choice flavors, local made Sciortino's rolls, local made Le Marche sausage", '14' ),
@@ -200,7 +193,7 @@ $sections = array(
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"align":"center","className":"br-lede","fontSize":"large"} -->
-<p class="has-text-align-center br-lede has-large-font-size">Pick a section and dig in. Specials rotate, so ask your server what's new.</p>
+<p class="has-text-align-center br-lede has-large-font-size">Pick a section and dig in. Ask your server about this week's specials.</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:cover -->
 
