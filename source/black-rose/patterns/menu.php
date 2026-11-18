@@ -13,8 +13,8 @@ $sections = array(
 		'id'    => 'cocktails',
 		'title' => 'Cocktails',
 		'kick'  => 'Shaken, stirred, occasionally set on fire.',
-		'img'   => 'negroni.jpg',
-		'alt'   => 'A stirred cocktail with an orange twist',
+		'img'   => 'br-cocktail.jpg',
+		'alt'   => 'A Black Rose cocktail held up at the bar',
 		'open'  => true,
 		'groups' => array(
 			array( 'h' => 'Speciality', 'items' => array(
@@ -141,8 +141,8 @@ $sections = array(
 		'id'    => 'food',
 		'title' => 'Food',
 		'kick'  => 'Elevated Italian street food. To snack, to share.',
-		'img'   => 'pizza-slice.jpg',
-		'alt'   => 'A slice of pizza',
+		'img'   => 'br-italian-dip.jpg',
+		'alt'   => 'Italian Dip with a burrata ball, olives and tomato, served with bread',
 		'open'  => false,
 		'note'  => 'V can be made vegetarian · VG can be made vegan · GF gluten-free · GFO gluten-free option available',
 		'groups' => array(
@@ -190,8 +190,8 @@ $sections = array(
 	),
 );
 ?>
-<!-- wp:cover {"url":"<?php echo $i( 'back-bar.jpg' ); ?>","dimRatio":70,"overlayColor":"ink","isUserOverlayColor":true,"minHeight":56,"minHeightUnit":"vh","align":"full","className":"br-menu-hero","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|50","left":"var:preset|spacing|30","right":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"1100px"}} -->
-<div class="wp-block-cover alignfull br-menu-hero" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--30);min-height:56vh"><img class="wp-block-cover__image-background" alt="" src="<?php echo $i( 'back-bar.jpg' ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-ink-background-color has-background-dim-70 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","className":"br-eyebrow"} -->
+<!-- wp:cover {"url":"<?php echo $i( 'br-bar-wide.jpg' ); ?>","dimRatio":70,"overlayColor":"ink","isUserOverlayColor":true,"minHeight":56,"minHeightUnit":"vh","align":"full","className":"br-menu-hero","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|50","left":"var:preset|spacing|30","right":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"1100px"}} -->
+<div class="wp-block-cover alignfull br-menu-hero" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--30);min-height:56vh"><img class="wp-block-cover__image-background" alt="" src="<?php echo $i( 'br-bar-wide.jpg' ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-ink-background-color has-background-dim-70 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","className":"br-eyebrow"} -->
 <p class="has-text-align-center br-eyebrow">Drinks · Plates · Good Decisions</p>
 <!-- /wp:paragraph -->
 

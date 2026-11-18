@@ -8,8 +8,8 @@
  */
 $i = function ( $f ) { return esc_url( get_theme_file_uri( 'assets/images/' . $f ) ); };
 ?>
-<!-- wp:cover {"url":"<?php echo $i( 'bar-hero.jpg' ); ?>","dimRatio":70,"overlayColor":"ink","isUserOverlayColor":true,"minHeight":92,"minHeightUnit":"vh","contentPosition":"center center","align":"full","className":"br-hero","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|30","right":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"1100px"}} -->
-<div class="wp-block-cover alignfull br-hero" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--30);min-height:92vh"><img class="wp-block-cover__image-background" alt="" src="<?php echo $i( 'bar-hero.jpg' ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-ink-background-color has-background-dim-70 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:image {"width":"210px","align":"center","className":"br-hero-logo"} -->
+<!-- wp:cover {"url":"<?php echo $i( 'br-backbar-neon.jpg' ); ?>","dimRatio":70,"overlayColor":"ink","isUserOverlayColor":true,"minHeight":92,"minHeightUnit":"vh","contentPosition":"center center","align":"full","className":"br-hero","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|30","right":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"1100px"}} -->
+<div class="wp-block-cover alignfull br-hero" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--30);min-height:92vh"><img class="wp-block-cover__image-background" alt="" src="<?php echo $i( 'br-backbar-neon.jpg' ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-ink-background-color has-background-dim-70 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:image {"width":"210px","align":"center","className":"br-hero-logo"} -->
 <figure class="wp-block-image aligncenter is-resized br-hero-logo"><img src="<?php echo $i( 'logo-cream.png' ); ?>" alt="Black Rose West Allis Est. 2026" style="width:210px"/></figure>
 <!-- /wp:image -->
 
@@ -78,11 +78,11 @@ $i = function ( $f ) { return esc_url( get_theme_file_uri( 'assets/images/' . $f
 
 <!-- wp:column {"verticalAlignment":"center","width":"52%","className":"br-collage"} -->
 <div class="wp-block-column is-vertically-aligned-center br-collage" style="flex-basis:52%"><!-- wp:image {"sizeSlug":"large","className":"br-collage-a"} -->
-<figure class="wp-block-image size-large br-collage-a"><img src="<?php echo $i( 'negroni.jpg' ); ?>" alt="A Negroni on a dark bar"/></figure>
+<figure class="wp-block-image size-large br-collage-a"><img src="<?php echo $i( 'br-backbar-tall.jpg' ); ?>" alt="The curved Black Rose back bar under the neon rose"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:image {"sizeSlug":"large","className":"br-collage-b"} -->
-<figure class="wp-block-image size-large br-collage-b"><img src="<?php echo $i( 'meatballs.jpg' ); ?>" alt="Spaghetti and a meatball in red sauce"/></figure>
+<figure class="wp-block-image size-large br-collage-b"><img src="<?php echo $i( 'br-meatballs.jpg' ); ?>" alt="House meatballs in sugo with mozzarella and basil"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -91,8 +91,8 @@ $i = function ( $f ) { return esc_url( get_theme_file_uri( 'assets/images/' . $f
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":"0"}},"backgroundColor":"ink","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull has-ink-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:columns {"align":"full","className":"br-tiles","style":{"spacing":{"blockGap":{"top":"0","left":"0"}}}} -->
 <div class="wp-block-columns alignfull br-tiles"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo $i( 'cocktail-flight.jpg' ); ?>","dimRatio":40,"overlayColor":"ink","isUserOverlayColor":true,"minHeight":78,"minHeightUnit":"vh","contentPosition":"bottom left","className":"br-tile"} -->
-<div class="wp-block-cover has-custom-content-position is-position-bottom-left br-tile" style="min-height:78vh"><img class="wp-block-cover__image-background" alt="Four colorful cocktails" src="<?php echo $i( 'cocktail-flight.jpg' ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-ink-background-color has-background-dim-40 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"className":"br-tile-num"} -->
+<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo $i( 'br-cocktail.jpg' ); ?>","dimRatio":40,"overlayColor":"ink","isUserOverlayColor":true,"minHeight":78,"minHeightUnit":"vh","contentPosition":"bottom left","className":"br-tile"} -->
+<div class="wp-block-cover has-custom-content-position is-position-bottom-left br-tile" style="min-height:78vh"><img class="wp-block-cover__image-background" alt="A cocktail held up in the busy Black Rose bar" src="<?php echo $i( 'br-cocktail.jpg' ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-ink-background-color has-background-dim-40 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"className":"br-tile-num"} -->
 <p class="br-tile-num">01</p>
 <!-- /wp:paragraph -->
 
@@ -107,8 +107,8 @@ $i = function ( $f ) { return esc_url( get_theme_file_uri( 'assets/images/' . $f
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo $i( 'pizza-slice.jpg' ); ?>","dimRatio":40,"overlayColor":"ink","isUserOverlayColor":true,"minHeight":78,"minHeightUnit":"vh","contentPosition":"bottom left","className":"br-tile"} -->
-<div class="wp-block-cover has-custom-content-position is-position-bottom-left br-tile" style="min-height:78vh"><img class="wp-block-cover__image-background" alt="A slice of pizza" src="<?php echo $i( 'pizza-slice.jpg' ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-ink-background-color has-background-dim-40 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"className":"br-tile-num"} -->
+<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo $i( 'br-cutlet-sandwich.jpg' ); ?>","dimRatio":40,"overlayColor":"ink","isUserOverlayColor":true,"minHeight":78,"minHeightUnit":"vh","contentPosition":"bottom left","className":"br-tile"} -->
+<div class="wp-block-cover has-custom-content-position is-position-bottom-left br-tile" style="min-height:78vh"><img class="wp-block-cover__image-background" alt="A breaded cutlet sandwich served in red-checked paper" src="<?php echo $i( 'br-cutlet-sandwich.jpg' ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-ink-background-color has-background-dim-40 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"className":"br-tile-num"} -->
 <p class="br-tile-num">02</p>
 <!-- /wp:paragraph -->
 
@@ -123,8 +123,8 @@ $i = function ( $f ) { return esc_url( get_theme_file_uri( 'assets/images/' . $f
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo $i( 'pour.jpg' ); ?>","dimRatio":40,"overlayColor":"ink","isUserOverlayColor":true,"minHeight":78,"minHeightUnit":"vh","contentPosition":"bottom left","className":"br-tile"} -->
-<div class="wp-block-cover has-custom-content-position is-position-bottom-left br-tile" style="min-height:78vh"><img class="wp-block-cover__image-background" alt="A bartender pouring a cocktail at a dimly lit bar" src="<?php echo $i( 'pour.jpg' ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-ink-background-color has-background-dim-40 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"className":"br-tile-num"} -->
+<div class="wp-block-column"><!-- wp:cover {"url":"<?php echo $i( 'br-lounge.jpg' ); ?>","dimRatio":40,"overlayColor":"ink","isUserOverlayColor":true,"minHeight":78,"minHeightUnit":"vh","contentPosition":"bottom left","className":"br-tile"} -->
+<div class="wp-block-cover has-custom-content-position is-position-bottom-left br-tile" style="min-height:78vh"><img class="wp-block-cover__image-background" alt="The Black Rose lounge with the neon rose and a velvet couch" src="<?php echo $i( 'br-lounge.jpg' ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-ink-background-color has-background-dim-40 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"className":"br-tile-num"} -->
 <p class="br-tile-num">03</p>
 <!-- /wp:paragraph -->
 
@@ -153,6 +153,78 @@ $i = function ( $f ) { return esc_url( get_theme_file_uri( 'assets/images/' . $f
 <p class="has-text-align-center br-eyebrow br-eyebrow--dark">— The management</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
+
+<!-- wp:group {"align":"full","className":"br-chef","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|30","right":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"ink","layout":{"type":"constrained","contentSize":"1100px"}} -->
+<div class="wp-block-group alignfull br-chef has-ink-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--30)"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"46%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:46%"><!-- wp:image {"sizeSlug":"large","className":"br-chef-img"} -->
+<figure class="wp-block-image size-large br-chef-img"><img src="<?php echo $i( 'br-chef-ace.jpg' ); ?>" alt="Ace, the Black Rose chef, smiling behind the bar"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","width":"54%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:54%"><!-- wp:paragraph {"className":"br-eyebrow"} -->
+<p class="br-eyebrow">Meet the Chef</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"className":"br-stack-title"} -->
+<h2 class="wp-block-heading br-stack-title">Ace<br><em>runs the kitchen.</em></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"fontSize":"large"} -->
+<p class="has-large-font-size">Everything coming out of the Black Rose kitchen has Ace's fingerprints on it. House meatballs, fresh local pasta, Sciortino's rolls, Le Marche sausage and plenty of mozzarella.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"textColor":"ash"} -->
+<p class="has-ash-color has-text-color">Elevated Italian street food, built for the middle of the table. If you see him at the bar, say hi.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( home_url( '/menu/#food' ) ); ?>">See the food menu</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+
+<!-- wp:group {"align":"full","className":"br-gallery-band","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|30","right":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"coal","layout":{"type":"constrained","contentSize":"1200px"}} -->
+<div class="wp-block-group alignfull br-gallery-band has-coal-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--30)"><!-- wp:paragraph {"align":"center","className":"br-eyebrow"} -->
+<p class="has-text-align-center br-eyebrow">Dark walls · Loud art · Good food</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","className":"br-stack-title"} -->
+<h2 class="wp-block-heading has-text-align-center br-stack-title">Inside <em>Black Rose</em></h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"br-gallery","layout":{"type":"default"}} -->
+<div class="wp-block-group br-gallery"><!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo $i( 'br-tapestry.jpg' ); ?>" alt="Tattoo-style tapestry of a woman and a snake on a red wall"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo $i( 'br-salad.jpg' ); ?>" alt="Seasonal salad topped with shaved parm and a skewered pepper"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo $i( 'br-art-wall.jpg' ); ?>" alt="A wall of framed tattoo flash art"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo $i( 'br-sliders.jpg' ); ?>" alt="Sliders with arugula and shaved parm"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo $i( 'br-sandwich.jpg' ); ?>" alt="A loaded sandwich held up over the bar"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="<?php echo $i( 'br-backbar-neon.jpg' ); ?>" alt="The back bar shelves under the neon rose"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
 
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","left":"var:preset|spacing|30","right":"var:preset|spacing|30"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"coal","layout":{"type":"constrained","contentSize":"1100px"}} -->
 <div class="wp-block-group alignfull has-coal-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--30)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"bottom"}} -->

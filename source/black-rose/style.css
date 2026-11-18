@@ -325,3 +325,15 @@ h1 em, h2 em, h3 em, .br-hero-title em, .br-stack-title em, .br-ig-title em {
 .br-ext-actions { display: flex; gap: 0.6rem; margin-top: 1rem; }
 .br-ext-btn { flex: 1; min-height: 3rem; font-family: var(--br-display); text-transform: uppercase; letter-spacing: 0.1em; font-size: 1rem; cursor: pointer; border: 1px solid var(--br-cream); background: transparent; color: var(--br-cream); }
 .br-ext-do { background: var(--br-rose); border-color: var(--br-rose); }
+
+/* ---------- Chef + gallery (real photos) ---------- */
+.br-chef-img img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: 60% 30%; border: 1px solid rgba(243,236,224,0.15); }
+.br-chef-img { margin: 0; position: relative; }
+.br-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; margin-top: var(--wp--preset--spacing--50) !important; }
+.br-gallery > figure { margin: 0 !important; overflow: hidden; }
+.br-gallery img { width: 100%; height: 100%; aspect-ratio: 1/1; object-fit: cover; transition: transform 0.4s ease; display: block; }
+.br-gallery > figure:hover img { transform: scale(1.04); }
+@media (max-width: 781px) {
+	.br-gallery { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+	.br-chef-img img { aspect-ratio: 1/1; }
+}
